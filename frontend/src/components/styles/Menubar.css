@@ -1,0 +1,45 @@
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.clearfix {
+  overflow: auto;
+}
+#logged-person {
+  display: inline;
+  margin: 5px;
+}
+#logout-btn {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header-blue .navbar-nav .nav-link {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-blue .navbar-nav .nav-link {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
+
+.action-button,
+.action-button:not(.disabled):active {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  color: #62b6e0;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 0.3rem 0.8rem;
+  background: transparent;
+  transition: background-color 0.25s;
+  outline: none;
+}
+.nav-link:hover {
+  border-bottom: 2px solid dodgerblue;
+}
